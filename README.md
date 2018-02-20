@@ -30,7 +30,7 @@ for ligne in lignes:
 
 
 #---------------------------------------------------------------------------------
-# Essais de solution au problème de lecture du document grants.csv: 
+#Essais de solution au problème de lecture du document grants.csv: 
 
     	#try: 
 		#print(ligne)
@@ -43,12 +43,12 @@ except UnicodeDecodeError:
     try:
         file = open("exampleFileName", "r", encoding="latin2")
     except: #..."""
-# source: https://stackoverflow.com/questions/7935972/writing-to-a-new-directory-in-python-without-changing-directory
+#source: https://stackoverflow.com/questions/7935972/writing-to-a-new-directory-in-python-without-changing-directory
 #---------------------------------------------------------------------------------
 
 
 #---------------------------------------------------------------------------------
-# Essais manqués d'écriture dans un autre fichier:
+#Essais manqués d'écriture dans un autre fichier:
 
 """import StringIO
 s = StringIO.StringIO(text)
@@ -74,15 +74,15 @@ with open(filename, 'w') as file_object:
 os.makedirs(dir_path)                             #create directory [current_path]/feed/address
 output = open(os.path.join(dir_path, file_name), 'wb')"""
 
-# Nom du fichier: periodiques.csv
+#Nom du fichier: periodiques.csv
 
-# source: file:///C:/Users/Marie/Downloads/beginners_python_cheat_sheet_pcc_all.pdf
+#source: file:///C:/Users/Marie/Downloads/beginners_python_cheat_sheet_pcc_all.pdf
 """filename = 'periodiques.csv'
 with open(filename, 'w') as file_object:
  file_object.write("I love programming.")"""
- # Ça, ça a marché, mais seulement pour un string de texte. Je ne peux pas écrire plusieurs éléments.
+ #Ça, ça a marché, mais seulement pour un string de texte. Je ne peux pas écrire plusieurs éléments.
  
-# Source: https://stackoverflow.com/questions/36003630/write-a-python-3-list-to-csv
+#Source: https://stackoverflow.com/questions/36003630/write-a-python-3-list-to-csv
 """for row_index, list in enumerate(buffer):
     for column_index, string in enumerate(list):
         buffer[row_index][column_index] = buffer[row_index][column_index]
@@ -91,4 +91,4 @@ with open('output.csv', 'w', newline='') as f:
     writer = csv.writer(f)
     writer.writerows(buffer)
 """
- #-----------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------
